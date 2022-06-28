@@ -11,11 +11,13 @@ import { Careers } from "./Pages/Careers";
 import { Contact } from "./Pages/Contact";
 import { NotFound } from "./Pages/NotFound";
 import { Footer } from "./components/Footer";
+import { Globalstyled } from "./styles/GlobalStyle";
 
 function App() {
   return (
     <HelmetProvider>
       <Router>
+        <Globalstyled />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
