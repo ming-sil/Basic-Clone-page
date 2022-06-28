@@ -1,3 +1,3 @@
 export const Pledge = () => {
-  return <></>;
+  return <>Pledge</>;
 };

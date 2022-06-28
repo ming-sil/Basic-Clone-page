@@ -1,3 +1,3 @@
 export const News = () => {
-  return <></>;
+  return <>News</>;
 };

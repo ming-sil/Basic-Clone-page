@@ -1,3 +1,3 @@
 export const Work = () => {
-  return <></>;
+  return <>Work</>;
 };
