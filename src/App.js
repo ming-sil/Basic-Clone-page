@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { HelmetProvider } from "react-helmet-async";
+import { Route, HashRouter as Router, Routes } from "react-router-dom";
+import { Home } from "./Pages/Home";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HelmetProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/work" element={""} />
+          <Route path="/about" element={""} />
+          <Route path="/news" element={""} />
+          <Route path="/thinking" element={""} />
+          <Route path="/pledge" element={""} />
+          <Route path="/careears" element={""} />
+          <Route path="/contact" element={""} />
+          <Route path="/*" element={""} />
+        </Routes>
+      </Router>
+    </HelmetProvider>
   );
 }
 
